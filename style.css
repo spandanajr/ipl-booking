@@ -1,2 +1,331 @@
+:root {
+    --primary: #071952;
+    --secondary: #0d286b;
+    --accent: #d4af37;
+    --background: #f4f6f8;
+    --white: #ffffff;
+    --text: #222222;
+    --border: #cccccc;
+}
 
+
+/* ================= BODY ================= */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--background);
+    color: var(--text);
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: var(--primary);
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Main heading */
+
+header h1 {
+    font-size: 30px;
+    margin: 10px;
+    color: #ffffff;
+}
+
+
+/* Second heading */
+
+header h2 {
+    font-size: 25px;
+    margin: 10px;
+
+    color: #4da6ff;
+}
+
+
+/* Header paragraph */
+
+header p {
+    font-size: 18px;
+    margin: 15px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background-color: var(--secondary);
+
+
+    position: absolute-relative;
+    
+    top: 0;
+
+    padding: 12px;
+
+    margin-top: 20px;
+
+    z-index: 10000;
+}
+
+
+nav ul {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+
+nav li {
+    display: inline-block;
+
+    margin: 0 15px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: boldh;
+
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    color: var(--accent);
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    padding: 30px;
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    background-color: var(--white);
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #dddddd;
+}
+
+
+section h2 {
+    color: var(--primary);
+
+    margin-top: 0;
+}
+
+
+/* ================= WELCOME SECTION ================= */
+
+.welcome-section {
+    text-align: center;
+}
+
+
+.welcome-section h2 {
+    font-size: 28px;
+}
+
+
+/* ================= MATCH LIST ================= */
+
+.match-list {
+    line-height: 2;
+
+    font-size: 17px;
+}
+
+
+/* ================= FORM ================= */
+
+form {
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+}
+
+
+/* Labels */
+
+label {
+    font-weight: bold;
+}
+
+
+/* Input fields */
+
+input,
+select {
+    padding: 8px;
+
+    margin: 5px;
+
+    border: 1px solid #bbbbbb;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+/* Input focus */
+
+input:focus,
+select:focus {
+    outline: none;
+
+    border: 2px solid var(--primary);
+}
+
+
+/* ================= BUTTONS ================= */
+
+button {
+    background-color: var(--accent);
+
+    color: var(--primary);
+
+    border: none;
+
+    padding: 10px 20px;
+
+    margin: 8px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+button:hover {
+    background-color: #c29f2f;
+}
+
+
+/* ================= TABLE ================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    margin-top: 20px;
+}
+
+
+th {
+    background-color: var(--primary);
+
+    color: white;
+
+    padding: 12px;
+}
+
+
+th,
+td {
+    border: 1px solid var(--border);
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+
+td {
+    background-color: white;
+}
+
+
+/* Table row hover */
+
+tbody tr:hover td {
+    background-color: #f1f1f1;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: var(--primary);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 30px;
+}
+
+
+/* ================= MOBILE SCREEN ================= */
+
+@media screen and (max-width: 768px) {
+
+    main {
+        padding: 15px;
+    }
+
+
+    nav li {
+        display: block;
+
+        margin: 10px;
+    }
+
+
+    table {
+        font-size: 12px;
+    }
+
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+
+    input,
+    select {
+        width: 90%;
+    }
+
+}
 
