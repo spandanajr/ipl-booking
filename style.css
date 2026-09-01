@@ -20,6 +20,12 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* ================= HEADER ================= */
@@ -27,11 +33,14 @@ body {
 header {
     background-color: var(--primary);
     color: white;
+    padding: 20px 40px;
 
-    text-align: center;
-
-    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 
 
 /* Main heading */
@@ -81,16 +90,18 @@ nav {
 
 nav ul {
     list-style-type: none;
-
     margin: 0;
     padding: 0;
 
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
 
 nav li {
-    display: inline-block;
+    display: flex;
 
     margin: 0 15px;
 }
@@ -238,14 +249,11 @@ button:hover {
 
 /* ================= TABLE ================= */
 
-table {
+
+.table-container {
     width: 100%;
-
-    border-collapse: collapse;
-
-    background-color: white;
-
-    margin-top: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -327,5 +335,20 @@ footer {
         width: 90%;
     }
 
+}
+.booking-container {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+.booking-form {
+    background-color: var(--white);
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
 }
 
